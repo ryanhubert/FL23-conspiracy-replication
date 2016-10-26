@@ -95,11 +95,11 @@ cd23$tccumpct <- cd23$tccum/cd23$totalcum
 
 # Generare a plot
 pdf("FL23_plot.pdf")
-plot(c(cd23$totalcum,cd23$totalcum),#1:nrow(cd23),
+plot(c(cd23$totalcum,cd23$totalcum),
      c(cd23$dwscumpct,cd23$tccumpct),
      pch=".",
      type="n",
-     xlab="cumulative vote (counting smallest to largest cd23ecincts by registered voters)",
+     xlab="cumulative vote (counting smallest to largest precincts by registered voters)",
      ylab="candidates' percentage of reported vote",
      xlim=c(0,51000),
      ylim=c(0,1),
